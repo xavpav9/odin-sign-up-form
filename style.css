@@ -91,5 +91,59 @@ a {
 }
 
 .right {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  font-family: Verdana, system-ui, sans-serif;
+  padding: 10px 140px 10px 40px;
+  background-color: #f5f5f5;
   width: calc(13 / 20 * var(--content-width));
+
+  .main-text {
+    font-weight: 700;
+    font-size: 1.35rem;
+    p:last-child {
+      margin-top: 20px;
+    }
+
+  }
+
+  form {
+
+  }
+
+  .accounts {
+
+    button.create-account {
+      cursor: pointer;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 10px 50px;
+      border: none;
+      border-radius: 10px;
+      background-color: #596D48;
+      margin-bottom: 25px;
+
+      &:hover { background-color: #597D48; }
+      &:active { background-color: #598D48; }
+    }
+
+    p {
+      font-size: 1.1rem;
+
+      a {
+        color: #596D48;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+    }
+  }
 }
+
+
+
