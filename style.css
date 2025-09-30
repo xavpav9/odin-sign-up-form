@@ -85,6 +85,7 @@ a {
 
   .credit {
     align-self: center;
+    font-family: Verdana, system-ui, sans-serif;
     font-size: 0.8rem;
     margin-bottom: 10px;
   }
