@@ -23,12 +23,12 @@
           <p> Sign up <em>now</em> to get started.</p>
           <p>You <em>know</em> you want to.</p>
         </div>
-        <form action="" method="POST">
-          <h3>Let's do this</h3>
+        <form action="" method="POST" id="main-form">
+          <h3>Let's do this!</h3>
           <div class="names">
             <div>
               <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="firstName">
+              <input minlength="2" type="text" id="first-name" name="firstName">
             </div>
 
             <div>
@@ -51,16 +51,16 @@
           <div class="passwords">
             <div>
               <label for="password">Password</label>
-              <input type="password" id="password" name="password">
+              <input required minlength="8" type="password" id="password" name="password">
             </div>
             <div>
               <label for="confirm-password">Confirm Password</label>
-              <input type="password" id="confirm-password" name="confirmPassword">
+              <input required minlength="8" type="password" id="confirm-password" name="confirmPassword">
             </div>
           </div>
         </form>
         <div class="accounts">
-          <button class="create-account">Create Account</button>
+          <button class="create-account" form="main-form" type="submit">Create Account</button>
           <p>Already have an account? <a rel="noopener noreferrer" href="">Log in</a></p>
         </div>
       </div>
