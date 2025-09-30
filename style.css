@@ -132,7 +132,6 @@ a {
     }
 
     input {
-
       appearance: none;
       padding: 0px 4px;
       border: 2px solid #E5E7EB;
@@ -143,8 +142,12 @@ a {
     }
 
 
-    .passwords input:invalid, input:user-invalid {
+    .passwords input:invalid, input:user-invalid, .passwords input:not(.same) {
       border-color: red;
+    }
+
+    input.same {
+      border-color: green;
     }
 
     input:focus {
@@ -190,7 +193,6 @@ a {
         text-decoration: none;
         font-weight: bold;
       }
-
     }
   }
 }
