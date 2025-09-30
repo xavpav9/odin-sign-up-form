@@ -3,3 +3,93 @@
   margin: 0px;
   line-height: 1.5;
 }
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+  font-display: block;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #222;
+  min-height: 100vh;
+}
+
+a {
+  &:link {
+    color: white;
+  }
+
+  &:visited {
+    color: white;
+  }
+
+  &:active {
+    color: #ddd;
+  }
+
+  &:hover {
+    color: #eee;
+  }
+}
+
+.content {
+  --content-width: 1250px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  & > * {
+    flex-shrink: 0
+  }
+
+  margin: 0 auto;
+  width: var(--content-width);
+  height: clamp(800px, 100vh, 1000px);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: center / cover no-repeat url("./images/nature-photo.jpg");
+
+  color: white;
+  width: calc(7 / 20 * var(--content-width));
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 40%;
+    background-color: rgb(0 0 0 / 50%);
+
+    img {
+      width: 80px;
+    }
+
+    p {
+      font-weight: 700;
+      font-family: "Norse-Bold";
+      font-size: 5.5rem;
+    }
+  }
+
+  .credit {
+    align-self: center;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+}
+
+.right {
+  width: calc(13 / 20 * var(--content-width));
+}
